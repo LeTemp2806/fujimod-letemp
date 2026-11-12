@@ -1,0 +1,25 @@
+{
+  "firmware_id": "xt4-212",
+  "size": 51278280,
+  "sha256": "853d273b5603d3a2b93493f0ebd6a762b0b4b6bdc70317777775ae5f8ed93bc5",
+  "version_major": 2,
+  "version_minor": 18,
+  "anchors": [
+    { "name": "paired_function_status_setter", "value": 18087148 },
+    { "name": "notification_helper", "value": 33235376 }
+  ],
+  "windows": [
+    {
+      "name": "paired_function_status_setter",
+      "dat_offset": 2490996,
+      "offset": 1174764,
+      "size": 140
+    }
+  ],
+  "strings": [
+    {
+      "address": 22439452,
+      "value": "\t$INFO_REC boFunctionStatus  %s->%s\r\n"
+    }
+  ]
+}
