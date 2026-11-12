@@ -1,0 +1,149 @@
+{
+  "firmware_id": "xt4-212",
+  "size": 51278280,
+  "sha256": "853d273b5603d3a2b93493f0ebd6a762b0b4b6bdc70317777775ae5f8ed93bc5",
+  "version_major": 2,
+  "version_minor": 18,
+  "anchors": [
+    {
+      "name": "UI_SETP_LEVELTESTER",
+      "value": 1347
+    },
+    {
+      "name": "UI_SETP_3D_LEVEL",
+      "value": 1348
+    },
+    {
+      "name": "UI_SETP_DISPLAY_REC",
+      "value": 1610
+    },
+    {
+      "name": "UILIB_SUB_SCR_REC_SPIRIT_LEVEL",
+      "value": 255
+    },
+    {
+      "name": "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H",
+      "value": 256
+    },
+    {
+      "name": "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V",
+      "value": 257
+    },
+    {
+      "name": "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V",
+      "value": 258
+    },
+    {
+      "name": "string_UI_SETP_3D_LEVEL",
+      "value": 21610292
+    },
+    {
+      "name": "string_UI_3D_LEVEL_ON",
+      "value": 21376824
+    },
+    {
+      "name": "string_UI_3D_LEVEL_OFF",
+      "value": 21376840
+    },
+    {
+      "name": "string_UI_EXE_REC_3D_LEVEL",
+      "value": 21412064
+    },
+    {
+      "name": "string_boRec3DlevelStatus",
+      "value": 22433600
+    },
+    {
+      "name": "candidate_status_setter",
+      "value": 18085320
+    },
+    {
+      "name": "candidate_status_structure",
+      "value": 28818816
+    }
+  ],
+  "windows": [
+    {
+      "name": "setting_name_case",
+      "dat_offset": 2490996,
+      "offset": 131552,
+      "size": 36
+    },
+    {
+      "name": "enum_name_3d",
+      "dat_offset": 2490996,
+      "offset": 281464,
+      "size": 136
+    },
+    {
+      "name": "status_setter",
+      "dat_offset": 2490996,
+      "offset": 1172936,
+      "size": 124
+    },
+    {
+      "name": "status_setter_caller",
+      "dat_offset": 2490996,
+      "offset": 1214256,
+      "size": 72
+    },
+    {
+      "name": "status_reader_a",
+      "dat_offset": 2490996,
+      "offset": 1222160,
+      "size": 184
+    },
+    {
+      "name": "status_reader_b",
+      "dat_offset": 2490996,
+      "offset": 1271728,
+      "size": 48
+    },
+    {
+      "name": "cross_section_clear_status",
+      "dat_offset": 6029940,
+      "offset": 191396,
+      "size": 36
+    },
+    {
+      "name": "cross_section_set_status",
+      "dat_offset": 6029940,
+      "offset": 592424,
+      "size": 44
+    },
+    {
+      "name": "command_set_status",
+      "dat_offset": 6029940,
+      "offset": 1876548,
+      "size": 64
+    },
+    {
+      "name": "notification_after_set",
+      "dat_offset": 6029940,
+      "offset": 1716656,
+      "size": 44
+    }
+  ],
+  "strings": [
+    {
+      "address": 21610292,
+      "value": "UI_SETP_3D_LEVEL"
+    },
+    {
+      "address": 21376824,
+      "value": "UI_3D_LEVEL_ON"
+    },
+    {
+      "address": 21376840,
+      "value": "UI_3D_LEVEL_OFF"
+    },
+    {
+      "address": 21412064,
+      "value": "UI_EXE_REC_3D_LEVEL"
+    },
+    {
+      "address": 22433600,
+      "value": "\t$INFO_REC boRec3DlevelStatus %s->%s\r\n"
+    }
+  ]
+}

@@ -5,6 +5,13 @@ families, and locator queries. Boundaries, mapped bytes, pointer windows, names,
 types, readable C, notes, and external reference information are caller inputs.
 This crate contains no camera maps or firmware-derived fixtures.
 
+The read-only `ui_references` example accepts a caller-supplied identity and
+anchor specification, an update path, and a new output directory. It reuses
+the firmware decoder to inventory numeric/A32 reference candidates and checked
+string/range observations, without claiming function boundaries or producing a
+patch. A reproducible X-T4 investigation lives in
+`research/xt4-212-horizon-3d/`; its firmware bytes are local inputs, not fixtures.
+
 `align_sequences(left, right)` aligns arbitrary string tokens using the same
 longest-block implementation as family call alignment. It preserves every
 token, uses no popularity/junk heuristic, and resolves ties at the earliest

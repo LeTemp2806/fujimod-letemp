@@ -1,0 +1,1228 @@
+{
+  "firmware_id": "xt4-212",
+  "limitations": [
+    "Numeric matches are candidates, not semantic references or function boundaries.",
+    "Addresses come from stream headers, not verified runtime mappings; overlays may overlap.",
+    "Aligned A32 MOV/MOVW/CMP immediates, adjacent MOVW/MOVT, direct branches and PC-relative word loads are scanned.",
+    "Thumb, computed IDs, cross-stream loads and control/data reachability are not resolved.",
+    "No firmware transition executed, patch applied, signature verified or recovery demonstrated."
+  ],
+  "outer": {
+    "kind": 6,
+    "version_major": 2,
+    "version_minor": 18
+  },
+  "schema": 1,
+  "source": {
+    "sha256": "853d273b5603d3a2b93493f0ebd6a762b0b4b6bdc70317777775ae5f8ed93bc5",
+    "size": 51278280
+  },
+  "spec_sha256": "84533bd12fb9e55fcdafb84be6876613523e4c19a26b33ba0933ebb9f93b60b6",
+  "streams": [
+    {
+      "dat_offset": 2490996,
+      "decoded_size": 7420408,
+      "header": {
+        "base": 16912384,
+        "entry": 19468484,
+        "initialized_size": 7421952,
+        "word_bits": 32
+      },
+      "hit_counts": {
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:a32-immediate-candidate": 422,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:word-value": 208,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:a32-immediate-candidate": 276,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:word-value": 1463,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:a32-immediate-candidate": 31,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:word-value": 55,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:a32-immediate-candidate": 46,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:word-value": 109,
+        "UI_SETP_3D_LEVEL:a32-immediate-candidate": 7,
+        "UI_SETP_3D_LEVEL:word-value": 8,
+        "UI_SETP_DISPLAY_REC:a32-immediate-candidate": 12,
+        "UI_SETP_DISPLAY_REC:word-value": 3,
+        "UI_SETP_LEVELTESTER:a32-immediate-candidate": 5,
+        "UI_SETP_LEVELTESTER:word-value": 5,
+        "candidate_status_setter:a32-direct-branch-candidate": 1,
+        "candidate_status_structure:a32-literal-load-candidate": 392,
+        "candidate_status_structure:word-value": 205,
+        "string_UI_3D_LEVEL_OFF:a32-address-pair-candidate": 1,
+        "string_UI_3D_LEVEL_ON:a32-address-pair-candidate": 1,
+        "string_UI_EXE_REC_3D_LEVEL:a32-address-pair-candidate": 1,
+        "string_UI_SETP_3D_LEVEL:a32-address-pair-candidate": 1,
+        "string_boRec3DlevelStatus:a32-address-pair-candidate": 1
+      },
+      "packed_size": 3449330,
+      "sha256": "0b5b0fb0ee5fe6b109dae9964b5cddfe18edab46b4a0c195f9da194448906eeb",
+      "windows": [
+        {
+          "instructions": [
+            {
+              "address": 17043936,
+              "instruction": "movw r0, #0xbf20",
+              "offset": 131552
+            },
+            {
+              "address": 17043940,
+              "instruction": "movt r0, #0x149",
+              "offset": 131556
+            },
+            {
+              "address": 17043944,
+              "instruction": "b #0x103d2c8",
+              "offset": 131560
+            },
+            {
+              "address": 17043948,
+              "instruction": "movw r0, #0xbf34",
+              "offset": 131564
+            },
+            {
+              "address": 17043952,
+              "instruction": "movt r0, #0x149",
+              "offset": 131568
+            },
+            {
+              "address": 17043956,
+              "instruction": "b #0x103d2c8",
+              "offset": 131572
+            },
+            {
+              "address": 17043960,
+              "instruction": "movw r0, #0xbf48",
+              "offset": 131576
+            },
+            {
+              "address": 17043964,
+              "instruction": "movt r0, #0x149",
+              "offset": 131580
+            },
+            {
+              "address": 17043968,
+              "instruction": "b #0x103d2c8",
+              "offset": 131584
+            }
+          ],
+          "name": "setting_name_case",
+          "offset": 131552,
+          "sha256": "4c5ef92e1e0eec655d03aa152419c6627ac326322ffd29dbf034c33e1b54c8fc",
+          "size": 36
+        },
+        {
+          "instructions": [
+            {
+              "address": 17193848,
+              "instruction": "str fp, [sp, #-4]!",
+              "offset": 281464
+            },
+            {
+              "address": 17193852,
+              "instruction": "add fp, sp, #0",
+              "offset": 281468
+            },
+            {
+              "address": 17193856,
+              "instruction": "cmp r0, #0",
+              "offset": 281472
+            },
+            {
+              "address": 17193860,
+              "instruction": "movweq r0, #0x2f38",
+              "offset": 281476
+            },
+            {
+              "address": 17193864,
+              "instruction": "movteq r0, #0x146",
+              "offset": 281480
+            },
+            {
+              "address": 17193868,
+              "instruction": "beq #0x1065bd0",
+              "offset": 281484
+            },
+            {
+              "address": 17193872,
+              "instruction": "cmp r0, #1",
+              "offset": 281488
+            },
+            {
+              "address": 17193876,
+              "instruction": "beq #0x1065bc8",
+              "offset": 281492
+            },
+            {
+              "address": 17193880,
+              "instruction": "cmp r0, #2",
+              "offset": 281496
+            },
+            {
+              "address": 17193884,
+              "instruction": "beq #0x1065bdc",
+              "offset": 281500
+            },
+            {
+              "address": 17193888,
+              "instruction": "cmp r0, #3",
+              "offset": 281504
+            },
+            {
+              "address": 17193892,
+              "instruction": "beq #0x1065be8",
+              "offset": 281508
+            },
+            {
+              "address": 17193896,
+              "instruction": "cmp r0, #4",
+              "offset": 281512
+            },
+            {
+              "address": 17193900,
+              "instruction": "beq #0x1065bf4",
+              "offset": 281516
+            },
+            {
+              "address": 17193904,
+              "instruction": "movw r3, #0x2fa4",
+              "offset": 281520
+            },
+            {
+              "address": 17193908,
+              "instruction": "movt r3, #0x146",
+              "offset": 281524
+            },
+            {
+              "address": 17193912,
+              "instruction": "cmp r0, #5",
+              "offset": 281528
+            },
+            {
+              "address": 17193916,
+              "instruction": "moveq r0, r3",
+              "offset": 281532
+            },
+            {
+              "address": 17193920,
+              "instruction": "movne r0, #0",
+              "offset": 281536
+            },
+            {
+              "address": 17193924,
+              "instruction": "b #0x1065bd0",
+              "offset": 281540
+            },
+            {
+              "address": 17193928,
+              "instruction": "movw r0, #0x2f48",
+              "offset": 281544
+            },
+            {
+              "address": 17193932,
+              "instruction": "movt r0, #0x146",
+              "offset": 281548
+            },
+            {
+              "address": 17193936,
+              "instruction": "add sp, fp, #0",
+              "offset": 281552
+            },
+            {
+              "address": 17193940,
+              "instruction": "pop {fp}",
+              "offset": 281556
+            },
+            {
+              "address": 17193944,
+              "instruction": "bx lr",
+              "offset": 281560
+            },
+            {
+              "address": 17193948,
+              "instruction": "movw r0, #0x2f58",
+              "offset": 281564
+            },
+            {
+              "address": 17193952,
+              "instruction": "movt r0, #0x146",
+              "offset": 281568
+            },
+            {
+              "address": 17193956,
+              "instruction": "b #0x1065bd0",
+              "offset": 281572
+            },
+            {
+              "address": 17193960,
+              "instruction": "movw r0, #0x2f6c",
+              "offset": 281576
+            },
+            {
+              "address": 17193964,
+              "instruction": "movt r0, #0x146",
+              "offset": 281580
+            },
+            {
+              "address": 17193968,
+              "instruction": "b #0x1065bd0",
+              "offset": 281584
+            },
+            {
+              "address": 17193972,
+              "instruction": "movw r0, #0x2f88",
+              "offset": 281588
+            },
+            {
+              "address": 17193976,
+              "instruction": "movt r0, #0x146",
+              "offset": 281592
+            },
+            {
+              "address": 17193980,
+              "instruction": "b #0x1065bd0",
+              "offset": 281596
+            }
+          ],
+          "name": "enum_name_3d",
+          "offset": 281464,
+          "sha256": "bb9ecd21ae0aa2f8993fd7e633f58dc89987e914027fa567241137b073e1ee4a",
+          "size": 136
+        },
+        {
+          "instructions": [
+            {
+              "address": 18085320,
+              "instruction": "push {r4, r5, fp, lr}",
+              "offset": 1172936
+            },
+            {
+              "address": 18085324,
+              "instruction": "add fp, sp, #0xc",
+              "offset": 1172940
+            },
+            {
+              "address": 18085328,
+              "instruction": "mov r4, r0",
+              "offset": 1172944
+            },
+            {
+              "address": 18085332,
+              "instruction": "movw r3, #0x18c8",
+              "offset": 1172948
+            },
+            {
+              "address": 18085336,
+              "instruction": "movt r3, #0x1bb",
+              "offset": 1172952
+            },
+            {
+              "address": 18085340,
+              "instruction": "ldrb r3, [r3, #0x1d]",
+              "offset": 1172956
+            },
+            {
+              "address": 18085344,
+              "instruction": "tst r3, #1",
+              "offset": 1172960
+            },
+            {
+              "address": 18085348,
+              "instruction": "beq #0x113f5f8",
+              "offset": 1172964
+            },
+            {
+              "address": 18085352,
+              "instruction": "ldr r3, [pc, #0x4c]",
+              "offset": 1172968
+            },
+            {
+              "address": 18085356,
+              "instruction": "ldrb r3, [r3, #0x9cd]",
+              "offset": 1172972
+            },
+            {
+              "address": 18085360,
+              "instruction": "cmp r3, #0",
+              "offset": 1172976
+            },
+            {
+              "address": 18085364,
+              "instruction": "bne #0x113f604",
+              "offset": 1172980
+            },
+            {
+              "address": 18085368,
+              "instruction": "ldr r3, [pc, #0x40]",
+              "offset": 1172984
+            },
+            {
+              "address": 18085372,
+              "instruction": "strb r4, [r3, #0xcbc]",
+              "offset": 1172988
+            },
+            {
+              "address": 18085376,
+              "instruction": "pop {r4, r5, fp, pc}",
+              "offset": 1172992
+            },
+            {
+              "address": 18085380,
+              "instruction": "ldr r3, [pc, #0x34]",
+              "offset": 1172996
+            },
+            {
+              "address": 18085384,
+              "instruction": "ldrb r0, [r3, #0xcbc]",
+              "offset": 1173000
+            },
+            {
+              "address": 18085388,
+              "instruction": "bl #0x102bfcc",
+              "offset": 1173004
+            },
+            {
+              "address": 18085392,
+              "instruction": "mov r5, r0",
+              "offset": 1173008
+            },
+            {
+              "address": 18085396,
+              "instruction": "mov r0, r4",
+              "offset": 1173012
+            },
+            {
+              "address": 18085400,
+              "instruction": "bl #0x102bfcc",
+              "offset": 1173016
+            },
+            {
+              "address": 18085404,
+              "instruction": "mov r3, r0",
+              "offset": 1173020
+            },
+            {
+              "address": 18085408,
+              "instruction": "mov r2, r5",
+              "offset": 1173024
+            },
+            {
+              "address": 18085412,
+              "instruction": "movw r1, #0x4f40",
+              "offset": 1173028
+            },
+            {
+              "address": 18085416,
+              "instruction": "movt r1, #0x156",
+              "offset": 1173032
+            },
+            {
+              "address": 18085420,
+              "instruction": "movw r0, #0xe228",
+              "offset": 1173036
+            },
+            {
+              "address": 18085424,
+              "instruction": "movt r0, #0x14b",
+              "offset": 1173040
+            },
+            {
+              "address": 18085428,
+              "instruction": "bl #0x11660f8",
+              "offset": 1173044
+            },
+            {
+              "address": 18085432,
+              "instruction": "b #0x113f5f8",
+              "offset": 1173048
+            },
+            {
+              "address": 18085436,
+              "instruction": null,
+              "offset": 1173052
+            },
+            {
+              "address": 18085440,
+              "instruction": null,
+              "offset": 1173056
+            }
+          ],
+          "name": "status_setter",
+          "offset": 1172936,
+          "sha256": "d61a512045effc0a53dea65e2b65e1fd2792ed13353d77c1f3482792e8e481da",
+          "size": 124
+        },
+        {
+          "instructions": [
+            {
+              "address": 18126640,
+              "instruction": "strb r4, [r6, #0x836]",
+              "offset": 1214256
+            },
+            {
+              "address": 18126644,
+              "instruction": "strb r4, [r6, #0x837]",
+              "offset": 1214260
+            },
+            {
+              "address": 18126648,
+              "instruction": "mov r0, r4",
+              "offset": 1214264
+            },
+            {
+              "address": 18126652,
+              "instruction": "bl #0x113e760",
+              "offset": 1214268
+            },
+            {
+              "address": 18126656,
+              "instruction": "strb r4, [r6, #0x882]",
+              "offset": 1214272
+            },
+            {
+              "address": 18126660,
+              "instruction": "mov r0, r4",
+              "offset": 1214276
+            },
+            {
+              "address": 18126664,
+              "instruction": "bl #0x113f2c8",
+              "offset": 1214280
+            },
+            {
+              "address": 18126668,
+              "instruction": "mov r0, r4",
+              "offset": 1214284
+            },
+            {
+              "address": 18126672,
+              "instruction": "bl #0x113f344",
+              "offset": 1214288
+            },
+            {
+              "address": 18126676,
+              "instruction": "mov r0, r4",
+              "offset": 1214292
+            },
+            {
+              "address": 18126680,
+              "instruction": "bl #0x113f5c8",
+              "offset": 1214296
+            },
+            {
+              "address": 18126684,
+              "instruction": "mov r0, r4",
+              "offset": 1214300
+            },
+            {
+              "address": 18126688,
+              "instruction": "bl #0x1134930",
+              "offset": 1214304
+            },
+            {
+              "address": 18126692,
+              "instruction": "add r5, r5, #0xe000",
+              "offset": 1214308
+            },
+            {
+              "address": 18126696,
+              "instruction": "strb r4, [r5, #0x9f4]",
+              "offset": 1214312
+            },
+            {
+              "address": 18126700,
+              "instruction": "strb r4, [r5, #0x9f5]",
+              "offset": 1214316
+            },
+            {
+              "address": 18126704,
+              "instruction": "mov r0, r4",
+              "offset": 1214320
+            },
+            {
+              "address": 18126708,
+              "instruction": "bl #0x113f53c",
+              "offset": 1214324
+            }
+          ],
+          "name": "status_setter_caller",
+          "offset": 1214256,
+          "sha256": "6b32cf3d40133c5f16d2e68bdc49cde6866a677921bf87e707e2f06a513ca0ab",
+          "size": 72
+        },
+        {
+          "instructions": [
+            {
+              "address": 18134544,
+              "instruction": "bl #0x1025504",
+              "offset": 1222160
+            },
+            {
+              "address": 18134548,
+              "instruction": "cmp r0, #0",
+              "offset": 1222164
+            },
+            {
+              "address": 18134552,
+              "instruction": "beq #0x114b678",
+              "offset": 1222168
+            },
+            {
+              "address": 18134556,
+              "instruction": "cmn r4, #0x80000001",
+              "offset": 1222172
+            },
+            {
+              "address": 18134560,
+              "instruction": "bne #0x114b68c",
+              "offset": 1222176
+            },
+            {
+              "address": 18134564,
+              "instruction": "ldr r3, [pc, #0x8c]",
+              "offset": 1222180
+            },
+            {
+              "address": 18134568,
+              "instruction": "ldrb r3, [r3, #0x138]",
+              "offset": 1222184
+            },
+            {
+              "address": 18134572,
+              "instruction": "cmp r3, #7",
+              "offset": 1222188
+            },
+            {
+              "address": 18134576,
+              "instruction": "beq #0x114b698",
+              "offset": 1222192
+            },
+            {
+              "address": 18134580,
+              "instruction": "ldr r3, [pc, #0x80]",
+              "offset": 1222196
+            },
+            {
+              "address": 18134584,
+              "instruction": "ldrb r3, [r3, #0xcbc]",
+              "offset": 1222200
+            },
+            {
+              "address": 18134588,
+              "instruction": "cmp r3, #1",
+              "offset": 1222204
+            },
+            {
+              "address": 18134592,
+              "instruction": "beq #0x114b654",
+              "offset": 1222208
+            },
+            {
+              "address": 18134596,
+              "instruction": "ldr r3, [pc, #0x70]",
+              "offset": 1222212
+            },
+            {
+              "address": 18134600,
+              "instruction": "ldrb r3, [r3, #0xcc1]",
+              "offset": 1222216
+            },
+            {
+              "address": 18134604,
+              "instruction": "cmp r3, #1",
+              "offset": 1222220
+            },
+            {
+              "address": 18134608,
+              "instruction": "popne {r4, r5, r6, r7, fp, pc}",
+              "offset": 1222224
+            },
+            {
+              "address": 18134612,
+              "instruction": "movw r3, #0x2808",
+              "offset": 1222228
+            },
+            {
+              "address": 18134616,
+              "instruction": "movt r3, #0x1af",
+              "offset": 1222232
+            },
+            {
+              "address": 18134620,
+              "instruction": "ldrb r3, [r3, #0xad]",
+              "offset": 1222236
+            },
+            {
+              "address": 18134624,
+              "instruction": "cmp r3, #0xb",
+              "offset": 1222240
+            },
+            {
+              "address": 18134628,
+              "instruction": "cmpne r3, #5",
+              "offset": 1222244
+            },
+            {
+              "address": 18134632,
+              "instruction": "popne {r4, r5, r6, r7, fp, pc}",
+              "offset": 1222248
+            },
+            {
+              "address": 18134636,
+              "instruction": "mov r0, #9",
+              "offset": 1222252
+            },
+            {
+              "address": 18134640,
+              "instruction": "bl #0x112a880",
+              "offset": 1222256
+            },
+            {
+              "address": 18134644,
+              "instruction": "pop {r4, r5, r6, r7, fp, pc}",
+              "offset": 1222260
+            },
+            {
+              "address": 18134648,
+              "instruction": "mov r1, r6",
+              "offset": 1222264
+            },
+            {
+              "address": 18134652,
+              "instruction": "mov r0, r5",
+              "offset": 1222268
+            },
+            {
+              "address": 18134656,
+              "instruction": "bl #0x1025514",
+              "offset": 1222272
+            },
+            {
+              "address": 18134660,
+              "instruction": "mov r4, r0",
+              "offset": 1222276
+            },
+            {
+              "address": 18134664,
+              "instruction": "b #0x114b61c",
+              "offset": 1222280
+            },
+            {
+              "address": 18134668,
+              "instruction": "uxtb r0, r4",
+              "offset": 1222284
+            },
+            {
+              "address": 18134672,
+              "instruction": "bl #0x112a880",
+              "offset": 1222288
+            },
+            {
+              "address": 18134676,
+              "instruction": "b #0x114b624",
+              "offset": 1222292
+            },
+            {
+              "address": 18134680,
+              "instruction": "movw r3, #0x18c8",
+              "offset": 1222296
+            },
+            {
+              "address": 18134684,
+              "instruction": "movt r3, #0x1bb",
+              "offset": 1222300
+            },
+            {
+              "address": 18134688,
+              "instruction": "ldrb r3, [r3, #0x16d]",
+              "offset": 1222304
+            },
+            {
+              "address": 18134692,
+              "instruction": "cmp r3, #0",
+              "offset": 1222308
+            },
+            {
+              "address": 18134696,
+              "instruction": "beq #0x114b634",
+              "offset": 1222312
+            },
+            {
+              "address": 18134700,
+              "instruction": "mov r0, #0",
+              "offset": 1222316
+            },
+            {
+              "address": 18134704,
+              "instruction": "bl #0x112a880",
+              "offset": 1222320
+            },
+            {
+              "address": 18134708,
+              "instruction": "b #0x114b634",
+              "offset": 1222324
+            },
+            {
+              "address": 18134712,
+              "instruction": null,
+              "offset": 1222328
+            },
+            {
+              "address": 18134716,
+              "instruction": null,
+              "offset": 1222332
+            },
+            {
+              "address": 18134720,
+              "instruction": "push {r4, r5, fp, lr}",
+              "offset": 1222336
+            },
+            {
+              "address": 18134724,
+              "instruction": "add fp, sp, #0xc",
+              "offset": 1222340
+            }
+          ],
+          "name": "status_reader_a",
+          "offset": 1222160,
+          "sha256": "22914d8c4116a868f3bc3b6afb0384406ba7757c1b85dc303e7bccb6830a5701",
+          "size": 184
+        },
+        {
+          "instructions": [
+            {
+              "address": 18184112,
+              "instruction": "bl #0x1022f7c",
+              "offset": 1271728
+            },
+            {
+              "address": 18184116,
+              "instruction": "cmp r0, #0x21",
+              "offset": 1271732
+            },
+            {
+              "address": 18184120,
+              "instruction": "moveq r3, #0",
+              "offset": 1271736
+            },
+            {
+              "address": 18184124,
+              "instruction": "movne r3, #1",
+              "offset": 1271740
+            },
+            {
+              "address": 18184128,
+              "instruction": "strb r3, [r4, #0x98]",
+              "offset": 1271744
+            },
+            {
+              "address": 18184132,
+              "instruction": "ldr r2, [pc, #-0x178]",
+              "offset": 1271748
+            },
+            {
+              "address": 18184136,
+              "instruction": "ldrb r3, [r2, #0xcbc]",
+              "offset": 1271752
+            },
+            {
+              "address": 18184140,
+              "instruction": "subs r3, r3, #1",
+              "offset": 1271756
+            },
+            {
+              "address": 18184144,
+              "instruction": "movne r3, #1",
+              "offset": 1271760
+            },
+            {
+              "address": 18184148,
+              "instruction": "strb r3, [r4, #0x99]",
+              "offset": 1271764
+            },
+            {
+              "address": 18184152,
+              "instruction": "ldrb r3, [r2, #0xcc1]",
+              "offset": 1271768
+            },
+            {
+              "address": 18184156,
+              "instruction": "subs r3, r3, #1",
+              "offset": 1271772
+            }
+          ],
+          "name": "status_reader_b",
+          "offset": 1271728,
+          "sha256": "4d334cd0cdb63cd2fc33a332662c557a711cc9b010728c50647215d909778ad0",
+          "size": 48
+        }
+      ]
+    },
+    {
+      "dat_offset": 6029940,
+      "decoded_size": 9437184,
+      "header": {
+        "base": 31518720,
+        "entry": 31579744,
+        "initialized_size": 9437184,
+        "word_bits": 32
+      },
+      "hit_counts": {
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:a32-immediate-candidate": 1017,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:word-value": 49,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:a32-immediate-candidate": 495,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:word-value": 273,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:a32-immediate-candidate": 171,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:word-value": 41,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:a32-immediate-candidate": 68,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:word-value": 170,
+        "UI_SETP_3D_LEVEL:a32-immediate-candidate": 8,
+        "UI_SETP_3D_LEVEL:word-value": 5,
+        "UI_SETP_DISPLAY_REC:a32-immediate-candidate": 179,
+        "UI_SETP_DISPLAY_REC:word-value": 28,
+        "UI_SETP_LEVELTESTER:a32-immediate-candidate": 1,
+        "UI_SETP_LEVELTESTER:word-value": 4,
+        "candidate_status_setter:a32-direct-branch-candidate": 189,
+        "candidate_status_structure:a32-literal-load-candidate": 4057,
+        "candidate_status_structure:word-value": 1335
+      },
+      "packed_size": 5254523,
+      "sha256": "e1ef8b30903d3078fde103cdd134fca7bfc4337d67bcaf55c3080ffd5fd93b13",
+      "windows": [
+        {
+          "instructions": [
+            {
+              "address": 31710116,
+              "instruction": "ldr r0, [fp, #-0x10]",
+              "offset": 191396
+            },
+            {
+              "address": 31710120,
+              "instruction": "bl #0x2050060",
+              "offset": 191400
+            },
+            {
+              "address": 31710124,
+              "instruction": "cmp r0, #0",
+              "offset": 191404
+            },
+            {
+              "address": 31710128,
+              "instruction": "bne #0x1e3a44c",
+              "offset": 191408
+            },
+            {
+              "address": 31710132,
+              "instruction": "bl #0x113fcec",
+              "offset": 191412
+            },
+            {
+              "address": 31710136,
+              "instruction": "mov r0, #0",
+              "offset": 191416
+            },
+            {
+              "address": 31710140,
+              "instruction": "bl #0x113f5c8",
+              "offset": 191420
+            },
+            {
+              "address": 31710144,
+              "instruction": "bl #0x1fdef44",
+              "offset": 191424
+            },
+            {
+              "address": 31710148,
+              "instruction": "b #0x1e3a44c",
+              "offset": 191428
+            }
+          ],
+          "name": "cross_section_clear_status",
+          "offset": 191396,
+          "sha256": "1a8a3c40d41c6480ac0e5506784d494d186eacd12963a450795b7b9cee975ad9",
+          "size": 36
+        },
+        {
+          "instructions": [
+            {
+              "address": 32111144,
+              "instruction": "mov r0, #1",
+              "offset": 592424
+            },
+            {
+              "address": 32111148,
+              "instruction": "bl #0x113fcec",
+              "offset": 592428
+            },
+            {
+              "address": 32111152,
+              "instruction": "mov r0, #1",
+              "offset": 592432
+            },
+            {
+              "address": 32111156,
+              "instruction": "bl #0x113f5c8",
+              "offset": 592436
+            },
+            {
+              "address": 32111160,
+              "instruction": "bl #0x1fb21b0",
+              "offset": 592440
+            },
+            {
+              "address": 32111164,
+              "instruction": "mov r0, #2",
+              "offset": 592444
+            },
+            {
+              "address": 32111168,
+              "instruction": "bl #0x1fd0fb4",
+              "offset": 592448
+            },
+            {
+              "address": 32111172,
+              "instruction": "mov r0, #9",
+              "offset": 592452
+            },
+            {
+              "address": 32111176,
+              "instruction": "bl #0x201c51c",
+              "offset": 592456
+            },
+            {
+              "address": 32111180,
+              "instruction": "bl #0x1e465b4",
+              "offset": 592460
+            },
+            {
+              "address": 32111184,
+              "instruction": "b #0x1e9f86c",
+              "offset": 592464
+            }
+          ],
+          "name": "cross_section_set_status",
+          "offset": 592424,
+          "sha256": "4b5ddd52eda14e2f2f80371a8b877b78dcd85d70ec7c4f24eadd2a8c2e7b2b90",
+          "size": 44
+        },
+        {
+          "instructions": [
+            {
+              "address": 33395268,
+              "instruction": "mov r0, #1",
+              "offset": 1876548
+            },
+            {
+              "address": 33395272,
+              "instruction": "bl #0x113fcec",
+              "offset": 1876552
+            },
+            {
+              "address": 33395276,
+              "instruction": "mov r0, #1",
+              "offset": 1876556
+            },
+            {
+              "address": 33395280,
+              "instruction": "bl #0x113f5c8",
+              "offset": 1876560
+            },
+            {
+              "address": 33395284,
+              "instruction": "bl #0x1fb21b0",
+              "offset": 1876564
+            },
+            {
+              "address": 33395288,
+              "instruction": "movw r3, #0xd80",
+              "offset": 1876568
+            },
+            {
+              "address": 33395292,
+              "instruction": "movt r3, #0x1b7",
+              "offset": 1876572
+            },
+            {
+              "address": 33395296,
+              "instruction": "ldr r3, [r3]",
+              "offset": 1876576
+            },
+            {
+              "address": 33395300,
+              "instruction": "sub r3, r3, #0xa000",
+              "offset": 1876580
+            },
+            {
+              "address": 33395304,
+              "instruction": "sub r3, r3, #0x9f",
+              "offset": 1876584
+            },
+            {
+              "address": 33395308,
+              "instruction": "cmp r3, #3",
+              "offset": 1876588
+            },
+            {
+              "address": 33395312,
+              "instruction": "movls r0, #8",
+              "offset": 1876592
+            },
+            {
+              "address": 33395316,
+              "instruction": "movhi r0, #7",
+              "offset": 1876596
+            },
+            {
+              "address": 33395320,
+              "instruction": "bl #0x202d200",
+              "offset": 1876600
+            },
+            {
+              "address": 33395324,
+              "instruction": "ldr r3, [pc, #-0x984]",
+              "offset": 1876604
+            },
+            {
+              "address": 33395328,
+              "instruction": "mov r2, #2",
+              "offset": 1876608
+            }
+          ],
+          "name": "command_set_status",
+          "offset": 1876548,
+          "sha256": "faf8c1910d73487d10e98a24c8e607c5f6e5f5a560cbe4e9eec593cfe377df35",
+          "size": 64
+        },
+        {
+          "instructions": [
+            {
+              "address": 33235376,
+              "instruction": "push {fp, lr}",
+              "offset": 1716656
+            },
+            {
+              "address": 33235380,
+              "instruction": "add fp, sp, #4",
+              "offset": 1716660
+            },
+            {
+              "address": 33235384,
+              "instruction": "sub sp, sp, #8",
+              "offset": 1716664
+            },
+            {
+              "address": 33235388,
+              "instruction": "mov r1, #0",
+              "offset": 1716668
+            },
+            {
+              "address": 33235392,
+              "instruction": "str r1, [sp]",
+              "offset": 1716672
+            },
+            {
+              "address": 33235396,
+              "instruction": "mov r3, r1",
+              "offset": 1716676
+            },
+            {
+              "address": 33235400,
+              "instruction": "mov r2, r1",
+              "offset": 1716680
+            },
+            {
+              "address": 33235404,
+              "instruction": "mov r0, #0xd9",
+              "offset": 1716684
+            },
+            {
+              "address": 33235408,
+              "instruction": "bl #0x112403c",
+              "offset": 1716688
+            },
+            {
+              "address": 33235412,
+              "instruction": "sub sp, fp, #4",
+              "offset": 1716692
+            },
+            {
+              "address": 33235416,
+              "instruction": "pop {fp, pc}",
+              "offset": 1716696
+            }
+          ],
+          "name": "notification_after_set",
+          "offset": 1716656,
+          "sha256": "b98e3c570d7d4ae867af7dc9ca98f9677a01dd6ce7bc92afc53f7ea1b95e3528",
+          "size": 44
+        }
+      ]
+    },
+    {
+      "dat_offset": 11403892,
+      "decoded_size": 10240000,
+      "header": null,
+      "hit_counts": {
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:a32-immediate-candidate": 921,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:word-value": 164,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:a32-immediate-candidate": 437,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:word-value": 3098,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:a32-immediate-candidate": 87,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:word-value": 656,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:a32-immediate-candidate": 112,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:word-value": 4388,
+        "UI_SETP_3D_LEVEL:a32-immediate-candidate": 3,
+        "UI_SETP_DISPLAY_REC:a32-immediate-candidate": 248,
+        "candidate_status_structure:word-value": 19
+      },
+      "packed_size": 4632713,
+      "sha256": "6c8d7b8b0a37df8c2b636c504c07a80318243b313d5bf435e2c39ef3f56e9f80",
+      "windows": []
+    },
+    {
+      "dat_offset": 27263604,
+      "decoded_size": 6446348,
+      "header": null,
+      "hit_counts": {
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:a32-immediate-candidate": 118,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL:word-value": 908,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:a32-immediate-candidate": 335,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_H:word-value": 101,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_EVF_V:word-value": 2,
+        "UILIB_SUB_SCR_REC_SPIRIT_LEVEL_LCD_V:word-value": 2
+      },
+      "packed_size": 3309617,
+      "sha256": "b1a6146fc89394e7c47a2bd5b0e92c07de085567da3aa8d6198bc1a32de9eec6",
+      "windows": []
+    }
+  ],
+  "strings": [
+    {
+      "address": 21610292,
+      "dat_offset": 2490996,
+      "offset": 4697908,
+      "value": "UI_SETP_3D_LEVEL"
+    },
+    {
+      "address": 21376824,
+      "dat_offset": 2490996,
+      "offset": 4464440,
+      "value": "UI_3D_LEVEL_ON"
+    },
+    {
+      "address": 21376840,
+      "dat_offset": 2490996,
+      "offset": 4464456,
+      "value": "UI_3D_LEVEL_OFF"
+    },
+    {
+      "address": 21412064,
+      "dat_offset": 2490996,
+      "offset": 4499680,
+      "value": "UI_EXE_REC_3D_LEVEL"
+    },
+    {
+      "address": 22433600,
+      "dat_offset": 2490996,
+      "offset": 5521216,
+      "value": "\t$INFO_REC boRec3DlevelStatus %s->%s\r\n"
+    }
+  ]
+}
